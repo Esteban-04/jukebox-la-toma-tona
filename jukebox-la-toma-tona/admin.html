@@ -1,0 +1,28 @@
+
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>🎧 Admin La Toma Tona</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <script src="login.js"></script>
+  <div class="container" id="loginDiv">
+    <h2>Login Admin</h2>
+    <input type="text" id="usr" placeholder="Usuario" />
+    <input type="password" id="pwd" placeholder="Contraseña" />
+    <button onclick="doLogin()">Entrar</button>
+    <p id="loginMsg"></p>
+  </div>
+  <div class="container" id="adminDiv" style="display:none">
+    <h1>🎛️ Lista de Canciones</h1>
+    <ul id="songList"></ul>
+    <button onclick="logout()">Cerrar sesión</button>
+  </div>
+  <script src="https://www.gstatic.com/firebasejs/9.22.2/firebase-app-compat.js"></script>
+  <script src="https://www.gstatic.com/firebasejs/9.22.2/firebase-firestore-compat.js"></script>
+  <script src="app.js"></script>
+</body>
+</html>

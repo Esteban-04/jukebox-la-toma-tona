@@ -1,0 +1,21 @@
+
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>🎵 La Toma Tona Jukebox</title>
+  <link rel="stylesheet" href="style.css" />
+  <script src="https://www.gstatic.com/firebasejs/9.22.2/firebase-app-compat.js"></script>
+  <script src="https://www.gstatic.com/firebasejs/9.22.2/firebase-firestore-compat.js"></script>
+</head>
+<body>
+  <div class="container">
+    <h1>🎶 Bienvenido a La Toma Tona 🎶</h1>
+    <input type="text" id="songInput" placeholder="Escribe la canción o artista" />
+    <button onclick="addSong()">Agregar a la lista</button>
+    <p id="message"></p>
+  </div>
+  <script src="app.js"></script>
+</body>
+</html>
